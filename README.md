@@ -8,7 +8,6 @@ Clone repo and install requirements
 ```bash
 git clone https://github.com/GramThanos/CloudFlareBypasser.git
 cd CloudFlareBypasser
-python3 -m pip install -r requirements.txt
 ```
 
 Call script
