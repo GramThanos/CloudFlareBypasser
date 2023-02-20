@@ -21,14 +21,20 @@ subdomains = open("dom.txt","r")
 print("Checking subdomains ...")
 
 found = 0
+tested = 0
 for subdomain in subdomains:
   subdomain = subdomain.strip()
   try:
-    hostname = socket.gethostbyname(subdomain + domain)
-    print('Found posible hostname: ' + hostname + ' (' + subdomain + domain + ')')
+    tested += 1
+    if len(subdomain) < 1:
+      continue
+    possible_domain = subdomain + '.' + domain
+    hostname = socket.gethostbyname(possible_domain)
+    print('Found posible hostname: ' + hostname + ' (' + possible_domain + ')')
     found += 1
   except:
     pass
+print("Tested " + str(tested) + ' subdomains.')
 if found > 0:
   print ("The operation has been successful :)")
 else:
