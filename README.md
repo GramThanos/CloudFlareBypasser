@@ -1,25 +1,17 @@
 # R-CloudFlareBypasser
-This script use for bypass cloudlfare and get real up :)
+This script use for bypass cloudlfare and get real up :) by tring to find the IP of possible subdomains.
 
 
-# Installation-LinuxUser:
+# Usage
 
-~ `git clone https://github.com/RemaxBoxTeam/R-CloudFlareBypasser.git`
+Clone repo and install requirements
+```bash
+git clone https://github.com/GramThanos/CloudFlareBypasser.git
+cd CloudFlareBypasser
+python3 -m pip install -r requirements.txt
+```
 
-~ `cd R-CloudFlareBypasser`
-
-~ `python3 R-CloudFlareBypasser.py`
-
-
-# Installation-WindowsUser:
-
-~ `git clone https://github.com/RemaxBoxTeam/R-CloudFlareBypasser.git`
-
-~ `cd R-CloudFlareBypasser`
-
-~ `python R-CloudFlareBypasser.py`
-
-
-#Requirements:
-
-Python Version : Above python3.6x
+Call script
+```bash
+python3 R-CloudFlareBypasser.py
+```
